@@ -1,0 +1,279 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #EFEFEF;
+    font-family: 'Poppins', sans-serif;
+}
+
+body::before {
+    content: "";
+    background: #535971;
+    /*Está definindo a cor do cabeçalho*/
+    width: 100%;
+    height: 436px;
+    top: 0;
+    margin: 0;
+
+    position: absolute;
+    z-index: -1;
+}
+
+header {
+    /* width: 319px; */
+    margin-top: 120px;
+
+}
+
+.page {
+    width: 750px;
+    margin: auto;
+}
+
+header h1 {
+    color: #FFF;
+    font-family: 'Staatliches', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    /*tamnho da fonte*/
+    font-weight: 400;
+    /*espessura da inha*/
+    line-height: normal;
+    /*Altura da linha*/
+
+
+}
+
+header p {
+    color: #FFF;
+
+    font-size: 20px;
+    line-height: normal;
+    margin-top: 18px;
+    width: 417px;
+
+}
+
+form {
+    width: 750px;
+    height: 1084px;
+    min-height: 300px;
+    padding: 64px;
+
+    border-radius: 20px 20px 0px 0px;
+    background: #FFF;
+
+    margin-top: 58px;
+}
+
+fieldset {
+    border: none;
+
+}
+
+
+.fieldset-wrapper legend {
+    color: #535971;
+    font-family: "Staatliches";
+    border-bottom: #a5a5ad 1px solid;
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 16px;
+
+}
+
+.input-wrapper {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.col-2 {
+    display: flex;
+
+    gap: 22px;
+    padding-top: 36px;
+
+}
+
+.input-wrapper label .box-wrapper label {
+    width: 42px;
+    height: 24px;
+
+    margin-bottom: 8px;
+
+    color: #4E4958;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+
+}
+
+.input-wrapper input {
+
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    background: #FAFAFC;
+    font-size: 16px;
+    width: 300px;
+    height: 56px;
+    margin: 8px auto 0px;
+
+    padding: 0 24px;
+
+    text-transform: uppercase;
+    /* taga para deixar as letras maiúscula */
+
+}
+
+.box-wrapper {
+    padding-top: 16px;
+}
+
+.box-wrapper input {
+    margin: 8px auto 8px;
+    width: 622px;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    background: #FAFAFC;
+
+    text-transform: uppercase;
+
+    padding: 0 24px;
+}
+
+.box-wrapper span {
+    color: #C1BCCC;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: 7px;
+
+}
+
+.field-wrapper legend {
+    color: #535971;
+    font-family: "Staatliches";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    border-bottom: #a5a5ad 1px solid;
+    padding: 30px 0px 8px 0px;
+}
+
+.col-3 {
+    display: flex;
+
+    padding-top: 8px;
+}
+
+h1,
+h2 {
+    color: #535971;
+    font-family: "Staatliches";
+    font-size: 20px;
+    font-weight: 400;
+    padding: 32px 0 8px 0;
+}
+
+
+.mentoria {
+    width: 300px;
+    height: 56px;
+    
+    font-size: 16px;
+    padding-left: 30px;
+
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    background: #FAFAFC;
+    margin-right: 30px;
+
+}
+
+.mentoria-end,
+.mentoria-begin {
+    width: 140px;
+    height: 56px;
+
+    font-size: 16px;
+    padding-left: 30px;
+
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    background: #FAFAFC;
+    margin-left: 10px;
+
+}
+
+.time-wrapper label {
+    margin-left: 10px;
+    color: #4E4958;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
+.time-wrapper label span {
+    width: 95px;
+    height: 20px;
+
+
+    padding-left: 7px;
+    color: #C1BCCC;
+
+    font-size: 12px;
+
+    font-weight: 400;
+    line-height: 20px;
+
+}
+
+footer {
+    width: 750px;
+    height: 160px;
+
+    border-radius: 0px 0px 20px 20px;
+    background: #535971;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    border-radius: 0px 0px 20px 20px;
+    background: #535971;
+}
+
+footer .button {
+
+    width: 608px;
+    height: 55.652px;
+
+    margin: auto;
+
+    border-radius: 20px;
+    background: #FF5374;
+    border: none;
+
+    color: #FFF;
+    font-family: "Staatliches";
+    font-size: 20px;
+
+    font-weight: 400;
+    line-height: 26px;
+}
+footer .button:hover {
+    background: #e63f60;
+}
+
+input:invalid { /*sudo class*/
+    border: 1px solid #ff1010;
+}   
